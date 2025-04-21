@@ -1,0 +1,88 @@
+Tasks:
+Write a program that accepts user input to create a list of integers. Then, compute the sum of all the integers in the list.
+
+         QUESTION 1
+# Get user input and split into individual strings
+user_input = input("Enter integers separated by spaces: ")
+
+# Convert strings to integers and create a list
+numbers = [int(num) for num in user_input.split()]
+
+# Calculate the sum
+total = sum(numbers)
+
+# Display the result
+print(f"The sum of the integers is: {total}")
+
+Create a tuple containing the names of five of your favorite books. Then, use a for loop to print each book name on a separate line.
+          QUESTION 2
+# Create a tuple of favorite books
+favorite_books = (
+    "The Alchemist",
+    "Atomic Habits",
+    "1984",
+    "Sapiens",
+    "The Great Gatsby"
+)
+
+# Print each book name using a for loop
+print("My Favorite Books:")
+for book in favorite_books:
+    print(book)
+
+ QUESTION 3
+Write a program that uses a dictionary to store information about a person, such as their name, age, and favorite color. Ask the user for input and store the information in the dictionary. Then, print the dictionary to the console.
+# Create an empty dictionary to store person's information
+person = {}
+
+# Get input from user
+person['name'] = input("Enter your name: ")
+person['age'] = int(input("Enter your age: "))
+person['favorite_color'] = input("Enter your favorite color: ")
+
+# Display the collected information
+print("\nPersonal Information:")
+print(person)
+
+QUESTION 4
+Write a program that accepts user input to create two sets of integers. Then, create a new set that contains only the elements that are common to both sets.
+
+# Get first set of integers
+set1_input = input("Enter integers for the first set (separated by spaces): ")
+set1 = set(map(int, set1_input.split()))
+
+# Get second set of integers
+set2_input = input("Enter integers for the second set (separated by spaces): ")
+set2 = set(map(int, set2_input.split()))
+
+# Find common elements using set intersection
+common_elements = set1 & set2  # or set1.intersection(set2)
+
+# Display results
+print("\nFirst set:", set1)
+print("Second set:", set2)
+print("Common elements:", common_elements or "No common elements found")
+
+QUESTION 5
+Create a program that stores a list of words. Then, use list comprehension to create a new list that contains only the words that have an odd number of characters.
+
+# Get words from user input
+user_input = input("Enter words separated by commas: ")
+words = [word.strip() for word in user_input.split(",")]
+
+# Filter odd-length words
+odd_length_words = [word for word in words if len(word) % 2 == 1]
+
+print("\nWords with odd character count:", odd_length_words)
+
+
+
+
+
+
+
+
+
+
+
+
