@@ -1,0 +1,34 @@
+QUESTION 1
+Create a file called input.txt and write at least five lines of text into it.
+
+$myfile = fopen("testfile.txt", "w")
+
+QUESTION 2
+Write a Python script to:
+Read the contents of input.txt.
+Write a Python script to:
+Read the contents of input.txt.
+
+
+QUESTION 4
+Count the number of words in the file.
+
+Write a Python script to:
+Read the contents of input.txt.
+
+
+QUESTION 5
+Convert all text to uppercase.
+
+QUESTION 6
+
+Write the processed text and the word count to a new file called output.txt.
+
+
+
+QUESTION 7
+Print a success message once the new file is created.
+
+
+
+
